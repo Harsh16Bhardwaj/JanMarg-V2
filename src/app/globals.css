@@ -2,7 +2,24 @@
 
 :root {
   --background: #ffffff;
+  --brand:#0e7c66;;
+  --brand-dark:#0a5d4d;
   --foreground: #171717;
+  --color-primary: #17725A;
+  --color-primary-dark: #145C49;
+  --muted:#465268;
+  --color-accent: #E6F4F1;
+  --color-success: #D1FADF;
+  --color-warning: #FFE9C3;
+  --color-info: #EAF6FF;
+  --color-surface: #F6F8FA;
+  --color-border: #E5E7EB;
+  --color-text: #1A202C;
+  --color-muted: #6B7280;
+  --color-badge-acknowledged: #FFE9C3;
+  --color-badge-assigned: #D1FADF;
+  --color-badge-resolved: #E6F4F1;
+  --font-family-base: 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
 @theme inline {
@@ -21,6 +38,9 @@
 
 body {
   background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color-text);
+  font-family: var(--font-family-base);
+  margin: 0;
+  padding: 0;
+  transition: all ease-in-out 300ms, background 0.3s, color 0.3s;
 }
