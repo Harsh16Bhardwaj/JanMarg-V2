@@ -435,7 +435,7 @@ model AdminLog {
   ipAddress            String? // for security auditing
   userAgent            String? // browser/client info
   sessionId            String? // session identifier
-  metadata             Json? // additional context
+  metadata             JSON? // additional context
   createdAt            DateTime   @default(now())
 
   @@index([adminId])
@@ -485,8 +485,8 @@ model AuditLog {
   action      String
   entityType  String? // type of entity affected
   entityId    String? // ID of affected entity
-  meta        Json?
-  description String? // human readable description
+  meta        JSON?
+  description String? //human-readable description
   ipAddress   String? // for security tracking
   timestamp   DateTime @default(now()) // renamed from createdAt for clarity
   createdAt   DateTime @default(now())
